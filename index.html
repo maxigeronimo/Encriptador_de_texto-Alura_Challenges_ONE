@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/window.css">
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <div class="caja">
+          <h1><img src="imagenes/LogoOracleOne.png"></h1>
+          <nav>
+              <ul>
+                  <li><a href="https://www.facebook.com/maxi.geronimo1" target="_blank"><img src="imagenes/20673.png" alt="logo facebook" class="facebook"></a></li>
+                  <li><a href="https://www.linkedin.com/in/maxi-ger%C3%B3nimo-colque-48385416a/" target="_blank"><img src="imagenes/linkedin.png" alt="logo linkedin" class="linkedin"></a></li>
+                  <li><a href="https://github.com/maxigeronimo" target="_blank"><img src="imagenes/github.png" alt="logo github" class="github"></a></li>
+                  <li><a href="https://www.instagram.com/mx_geronimo00/" target="_blank"><img src="imagenes/instragram.png" alt="logo instagram" class="instagram"></a></li>
+              </ul> 
+          </nav>
+      </div>       
+      </header>
+      <!-- cuerpo del encriptado -->
+    <main class="encriptador">
+        <section class="logo">
+            <!-- personalizacion de titulo -->
+            <img class="logoImg" src="imagenes/logo.png" alt="logo de alura">
+            <h1 class="title" data-text="Encriptador de texto">Encriptador de texto</h1>
+        </section>
+        <section class="parte1">
+            <!-- texto y botones -->
+            <section class="left">
+                <textarea class="input-texto" id="inputText" type="text"  placeholder="Ingrese un texto aqui..."></textarea>
+            </section>
+            <section class="left-buttom">
+                <p class="solapa"><img src="imagenes/exclamacion.png"> Solo letras minúsculas y sin acentos</p>
+                <button class="encrp" id="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="descrp" id="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </section>
+        </section>
+        <section class="parte2">
+            <!-- receptor y boton-copia -->
+            <section class="primerPanel">
+                <!-- panel de presentacion -->
+                <img id="imgDer" src="imagenes/Muñeco.png">
+                <h1 id="texto">Ningún mensaje fue encontrado</h1>
+                <h3 id="subtexto" style="color: #495057;">Ingresa el texto que desees encriptar o desencriptar.</h3>
+            </section>
+            <section class="segundoPanel" id="segundoPanel">
+                <!-- panel de trabajo -->
+                <textarea class="mensaje" id="texto2" name="name"placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                <!-- <div class="Boton"> -->
+                <button class="cop" id="copiar" type="button" onclick="copiar()" name="buttom">Copiar!</button>
+                <!-- </div> -->
+            </section>
+        </section>
+    </main>
+    <!-- nota al pie -->
+    <footer>
+        <img src="imagenes/logoIniciales.png" class="imagenPie">
+        <p class="copyright">&copy; by Geronimo Colque, Maximiliano</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="javascript/prueba.js"></script>
+</body>
+</html>
